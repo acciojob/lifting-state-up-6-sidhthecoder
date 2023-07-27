@@ -2,6 +2,8 @@ import React from 'react';
 
 const TodoList = ({ todos, onCompleteTodo }) => {
   return (
+    <div>
+    <h3>Child Component</h3>
     <ul>
       {todos.map((todo) => (
         <li key={todo.id}>
@@ -14,6 +16,7 @@ const TodoList = ({ todos, onCompleteTodo }) => {
         </li>
       ))}
     </ul>
+    </div>
   );
 };
 

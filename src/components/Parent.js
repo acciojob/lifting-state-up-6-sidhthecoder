@@ -4,8 +4,8 @@ import TodoList from './TodoList';
 const Parent = () => {
   const [todos, setTodos] = useState([
     { id: 1, text: 'Learn React', completed: false },
-    { id: 2, text: 'Build a project', completed: false },
-    { id: 3, text: 'Exercise', completed: false },
+    { id: 2, text: 'Build a React app', completed: false },
+    { id: 3, text: 'Deploy the React app', completed: false },
   ]);
 
   const handleCompleteTodo = (id) => {
@@ -18,7 +18,7 @@ const Parent = () => {
 
   return (
     <div>
-      <h1>Todo List</h1>
+      <h1>Parent Component</h1>
       <TodoList todos={todos} onCompleteTodo={handleCompleteTodo} />
     </div>
   );
